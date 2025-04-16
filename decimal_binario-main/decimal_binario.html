@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo o charset para garantir que caracteres especiais sejam exibidos corretamente -->
+    <meta charset="UTF-8">
+    <!-- Tornando o layout responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Decimal para Binário</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Escolhe uma fonte legível */
+            text-align: center; /* Centraliza o texto na página */
+            margin-top: 50px; /* Adiciona um espaço na parte superior da página */
+        }
+        input, button {
+            padding: 10px; /* Adiciona um espaço interno aos elementos */
+            font-size: 16px; /* Aumenta o tamanho da fonte para tornar mais legível */
+            margin: 10px; /* Adiciona um espaço entre os elementos */
+        }
+    </style>
+    
+    <script>
+        // Função que realiza a conversão de decimal para binário
+        function converterParaBinario() {
+            // Pega o valor digitado na caixa de entrada pelo usuário
+            var decimal = document.getElementById("decimalInput").value;
+
+            // Verifica se o campo de entrada está vazio
+            if (decimal == "") {
+                // Exibe uma mensagem de alerta caso o campo esteja vazio
+                alert("Por favor, insira um número.");
+                return; // Interrompe a execução da função, se não houver número
+            }
+            
+            // Converte o valor inserido (decimal) para binário
+            // O parseInt converte a string para um número inteiro e o toString(2) converte o número para binário
+            var binario = parseInt(decimal).toString(2);
+
+            // Exibe o resultado na tela no parágrafo com o id 'resultado'
+            document.getElementById("resultado").innerText = "O número binário é: " + binario;
+        }
+    </script>
+
+
+
+</head>
+<body>
+
+    <!-- Título principal da página -->
+    <h1>CONVERSOR DE DECIMAL PARA BINÁRIO</h1>
+    <hr>
+    <br>
+    
+    <!-- Texto explicativo para o usuário -->
+    <p>Digite um número decimal para converter para binário:</p>
+    
+    <!-- Caixa de entrada para o número decimal. A ID é usada para pegar o valor em JavaScript -->
+    <input type="number" id="decimalInput" placeholder="Digite um número decimal">
+    
+    <!-- Botão que chama a função para realizar a conversão -->
+    <button onclick="converterParaBinario()">Converter</button>
+
+    <!-- Parágrafo onde o resultado da conversão será exibido -->
+    <p id="resultado"></p>
+
+    
+</body>
+</html>
