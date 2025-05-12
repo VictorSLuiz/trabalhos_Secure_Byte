@@ -4,7 +4,7 @@ print('----------------------------------')
 print('')
 print('********SABORES PIZZAS************')
 print(' CALABRESA , A MODA  ')
-print(' 3 QUEIJOS , PORTUGUESA')
+print(' 4 QUEIJOS , PORTUGUESA')
 print('----------------------------------')
 
 print('======== PIZZAS - TAMANHO ========')
