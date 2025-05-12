@@ -1,3 +1,4 @@
+
 print('----------------------------------')
 print('======= pizzaria meu nobre =======')
 print('----------------------------------')
@@ -147,3 +148,4 @@ elif pizza == (2) and tamanho == ('M') and bebida == (2):
 elif pizza == (2) and tamanho == ('G') and bebida == (2):
     print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR A MODA, E UM DOLLY ')
     print('TOTAL A PAGAR: R$ 54,00')
+sdgsdgdg
