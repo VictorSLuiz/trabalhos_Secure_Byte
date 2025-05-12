@@ -149,3 +149,88 @@ elif pizza == (2) and tamanho == ('G') and bebida == (2):
     print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR A MODA, E UM DOLLY ')
     print('TOTAL A PAGAR: R$ 54,00')
 
+if pizza == (3) and tamanho == ('P') and bebida == (1):
+    print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR 4 QUEIJOS, E UMA COCA-COLA ')
+    print('TOTAL A PAGAR: R$ 30,00')
+elif pizza == (3) and tamanho == ('M') and bebida == (1):
+    print('SEU PEDIDO FOI UMA PIZZA MEDIA, SABOR 4 QUEIJOS, E UMA COCA-COLA ')
+    print('TOTAL A PAGAR: R$ 40,00')
+elif pizza == (3) and tamanho == ('G') and bebida == (1):
+    print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR 4 QUEIJOS, E UMA COCA-COLA ')
+    print('TOTAL A PAGAR: R$ 50,00')
+    
+elif pizza == (3) and tamanho == ('P') and bebida == (2):
+    print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR 4 QUEIJOS, E UM DOLLY ')
+    print('TOTAL A PAGAR: R$ 34,00')
+elif pizza == (3) and tamanho == ('M') and bebida == (2):
+    print('SEU PEDIDO FOI UMA PIZZA MEDIA, SABOR 4 QUEIJOS, E UM DOLLY ')
+    print('TOTAL A PAGAR: R$ 44,00')
+elif pizza == (3) and tamanho == ('G') and bebida == (2):
+    print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR 4 QUEIJOS, E UM DOLLY ')
+    print('TOTAL A PAGAR: R$ 54,00')
+    
+elif pizza == (3) and tamanho == ('P') and bebida == (3):
+    print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR 4 QUEIJOS, E UMA FANTA  ')
+    print('TOTAL A PAGAR: R$ 38,00')
+elif pizza == (3) and tamanho == ('M') and bebida == (3):
+    print('SEU PEDIDO FOI UMA PIZZA MEDIA, SABOR 4 QUEIJOS, E UMA FANTA ')
+    print('TOTAL A PAGAR: R$ 48,00')
+elif pizza == (3) and tamanho == ('G') and bebida == (3):
+    print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR 4 QUEIJOS, E UMA FANTA ')
+    print('TOTAL A PAGAR: R$ 58,00')
+
+elif pizza == (3) and tamanho == ('P') and bebida == (4):
+    print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR 4 QUEIJOS, E UM GUARANÁ ')
+    print('TOTAL A PAGAR: R$ 29,00')
+elif pizza == (3) and tamanho == ('M') and bebida == (4):
+    print('SEU PEDIDO FOI UMA PIZZA MEDIA, SABOR 4 QUEIJOS, E UM GUARANÁ ')
+    print('TOTAL A PAGAR: R$ 39,00')
+elif pizza == (3) and tamanho == ('G') and bebida == (4):
+    print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR 4QUEIJOS, E UM GUARANÁ ')
+    print('TOTAL A PAGAR: R$ 49,00')
+
+
+
+
+
+
+
+    if pizza == (4) and tamanho == ('P') and bebida == (1):
+    print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR PORTUGUESA, E UMA COCA-COLA ')
+    print('TOTAL A PAGAR: R$ 30,00')
+elif pizza == (4) and tamanho == ('M') and bebida == (1):
+    print('SEU PEDIDO FOI UMA PIZZA MEDIA, SABOR PORTUGUESA, E UMA COCA-COLA ')
+    print('TOTAL A PAGAR: R$ 40,00')
+elif pizza == (4) and tamanho == ('G') and bebida == (1):
+    print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR PORTUGUESA, E UMA COCA-COLA ')
+    print('TOTAL A PAGAR: R$ 50,00')
+    
+elif pizza == (4) and tamanho == ('P') and bebida == (2):
+    print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR PORTUGUESA, E UM DOLLY ')
+    print('TOTAL A PAGAR: R$ 34,00')
+elif pizza == (4) and tamanho == ('M') and bebida == (2):
+    print('SEU PEDIDO FOI UMA PIZZA MEDIA, SABOR PORTUGUESA, E UM DOLLY ')
+    print('TOTAL A PAGAR: R$ 44,00')
+elif pizza == (4) and tamanho == ('G') and bebida == (2):
+    print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR PORTUGUESA, E UM DOLLY ')
+    print('TOTAL A PAGAR: R$ 54,00')
+    
+elif pizza == (4) and tamanho == ('P') and bebida == (3):
+    print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR PORTUGUESA, E UMA FANTA  ')
+    print('TOTAL A PAGAR: R$ 38,00')
+elif pizza == (4) and tamanho == ('M') and bebida == (3):
+    print('SEU PEDIDO FOI UMA PIZZA MEDIA, SABOR PORTUGUESA, E UMA FANTA ')
+    print('TOTAL A PAGAR: R$ 48,00')
+elif pizza == (4) and tamanho == ('G') and bebida == (3):
+    print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR PORTUGUESA, E UMA FANTA ')
+    print('TOTAL A PAGAR: R$ 58,00')
+
+elif pizza == (4) and tamanho == ('P') and bebida == (4):
+    print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR PORTUGUESA, E UM GUARANÁ ')
+    print('TOTAL A PAGAR: R$ 29,00')
+elif pizza == (4) and tamanho == ('M') and bebida == (4):
+    print('SEU PEDIDO FOI UMA PIZZA MEDIA, SABOR PORTUGUESA, E UM GUARANÁ ')
+    print('TOTAL A PAGAR: R$ 39,00')
+elif pizza == (4) and tamanho == ('G') and bebida == (4):
+    print('SEU PEDIDO FOI UMA PIZZA GRANDE, SABOR PORTUGUESA, E UM GUARANÁ ')
+    print('TOTAL A PAGAR: R$ 49,00')
