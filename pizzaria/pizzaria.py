@@ -1,9 +1,8 @@
-
 print('----------------------------------')
 print('======= pizzaria meu nobre =======')
 print('----------------------------------')
 print('')
-print('********SABORES PIZZAS************')
+print('******* SABORES PIZZAS ***********')
 print(' CALABRESA , A MODA  ')
 print(' 4 QUEIJOS , PORTUGUESA')
 print('----------------------------------')
@@ -16,9 +15,9 @@ print('----------------------------------')
 
 print("========= refrigerantes ==========")
 print(' COCA-COLA - 2L      R$ 10,00     ')
-print(' DOLLY - 1L            R$ 4,00     ')
-print(' FANTA - 2L            R$ 8,00     ')
-print(' GUARANÁ - 2L          R$ 9,00     ')
+print(' DOLLY - 1L          R$ 4,00      ')
+print(' FANTA - 2L          R$ 8,00      ')
+print(' GUARANÁ - 2L        R$ 9,00      ')
 print('----------------------------------')
 print('')
 print('==================================')
@@ -26,9 +25,9 @@ print('         FAÇA SEU PEDIDO          ')
 print('==================================')
 print('         ESCOLHA SUA PIZZA        ')
 print('----------------------------------')
-print('[1] CALABRESA')
-print('[2] A MODA')
-print('[3] 4 QUEIJOS')
+print('[1] CALABRESA ')
+print('[2] A MODA    ')
+print('[3] 4 QUEIJOS ')
 print('[4] PORTUGUESA')
 print('==================================')
 pizza = int(input('DIGITE O NUMERO DA PIZZA ESCOLHIDA: '))
@@ -51,6 +50,7 @@ print('==================================')
 bebida = int(input('ESCOLHA O NÚMERO DA BEBIDA: '))
 print('==================================')
 print('')
+
 #INICIO PIZZA CALABRESA
 if pizza == (1) and tamanho == ('P') and bebida == (1):
     print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR CALABRESA, E UMA COCA-COLA ')
@@ -94,8 +94,7 @@ elif pizza == (1) and tamanho == ('G') and bebida == (4):
 #FINAL DA PIZZA DE CALABRESA
 #-------------------------------------------------------------------------------------
 #COMEÇO DA PIZZA A MODA
-
-if pizza == (2) and tamanho == ('P') and bebida == (1):
+elif pizza == (2) and tamanho == ('P') and bebida == (1):
     print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR A MODA, E UMA COCA-COLA ')
     print('TOTAL A PAGAR: R$ 30,00')
 elif pizza == (2) and tamanho == ('M') and bebida == (1):
@@ -138,7 +137,7 @@ elif pizza == (2) and tamanho == ('G') and bebida == (4):
 #-----------------------------------------------------------------------------------
 #COMEÇO DA PIZZA 4 QUEIJOS
 
-if pizza == (3) and tamanho == ('P') and bebida == (1):
+elif pizza == (3) and tamanho == ('P') and bebida == (1):
     print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR 4 QUEIJOS, E UMA COCA-COLA ')
     print('TOTAL A PAGAR: R$ 30,00')
 elif pizza == (3) and tamanho == ('M') and bebida == (1):
@@ -180,7 +179,7 @@ elif pizza == (3) and tamanho == ('G') and bebida == (4):
     
 #-----------------------------------------------------------------------------------
 
-if pizza == (4) and tamanho == ('P') and bebida == (1):
+elif pizza == (4) and tamanho == ('P') and bebida == (1):
     print('SEU PEDIDO FOI UMA PIZZA PEQUENA, SABOR PORTUGUESA, E UMA COCA-COLA ')
     print('TOTAL A PAGAR: R$ 30,00')
 elif pizza == (4) and tamanho == ('M') and bebida == (1):
