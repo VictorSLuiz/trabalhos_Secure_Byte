@@ -1,489 +1,327 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #d32f2f;
-    color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo h1 {
-    font-size: 2rem;
-    font-family: 'Georgia', serif;
-}
-
-.logo p {
-    font-size: 0.8rem;
-    opacity: 0.8;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 1.5rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: opacity 0.3s;
-}
-
-nav ul li a:hover {
-    opacity: 0.8;
-}
-
-.cart-icon {
-    position: relative;
-    cursor: pointer;
-    font-size: 1.5rem;
-}
-
-.cart-count {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: #ffc107;
-    color: #333;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    margin-top: 60px;
-}
-
-.hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #ffc107;
-    color: #333;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #ffca28;
-}
-
-.menu {
-    padding: 4rem 2rem;
-    background-color: white;
-}
-
-.menu h2, .about h2, .contact h2, .pedidos h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    color: #d32f2f;
-}
-
-.menu-filters {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-}
-
-.filter-btn {
-    background-color: #f5f5f5;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin: 0 0.5rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-
-.filter-btn.active {
-    background-color: #d32f2f;
-    color: white;
-}
-
-.filter-btn:hover {
-    background-color: #e53935;
-    color: white;
-}
-
-.pizzas-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.pizza-card {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.pizza-card:hover {
-    transform: translateY(-10px);
-}
-
-.pizza-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.pizza-info {
-    padding: 1.5rem;
-}
-
-.pizza-info h3 {
-    margin-bottom: 0.5rem;
-    color: #d32f2f;
-}
-
-.pizza-info p {
-    margin-bottom: 1rem;
-    color: #666;
-}
-
-.pizza-price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.price {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #d32f2f;
-}
-
-.add-to-cart {
-    background-color: #ffc107;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-}
-
-.add-to-cart:hover {
-    background-color: #ffca28;
-}
-
-.about, .contact {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-}
-
-.about-content {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 2rem;
-}
-
-.about-content p {
-    flex: 1;
-    font-size: 1.1rem;
-}
-
-.about-content img {
-    flex: 1;
-    max-width: 50%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.contact-info div {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.contact-info h3 {
-    color: #d32f2f;
-    margin-bottom: 1rem;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-
-.social-icons {
-    margin-top: 1rem;
-}
-
-.social-icons a {
-    color: white;
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #ffc107;
-}
-
-.cart-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2000;
-    justify-content: center;
-    align-items: center;
-}
-
-.cart-content {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 600px;
-    max-height: 80vh;
-    overflow-y: auto;
-    position: relative;
-}
-
-.close-cart {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.cart-items {
-    margin: 1.5rem 0;
-}
-
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-    border-bottom: 1px solid #eee;
-}
-
-.cart-item-info {
-    flex: 1;
-}
-
-.cart-item-actions {
-    display: flex;
-    align-items: center;
-}
-
-.cart-item-actions button {
-    background-color: #f5f5f5;
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 0.5rem;
-}
-
-.cart-item-actions span {
-    width: 30px;
-    text-align: center;
-}
-
-.remove-item {
-    color: #d32f2f;
-    margin-left: 1rem;
-    cursor: pointer;
-}
-
-.cart-total {
-    text-align: right;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 2px solid #eee;
-}
-
-.checkout-btn {
-    background-color: #d32f2f;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 1rem;
-    transition: background-color 0.3s;
-}
-
-.checkout-btn:hover {
-    background-color: #b71c1c;
-}
-
-.pedidos {
-    padding: 4rem 2rem;
-    background-color: white;
-}
-
-.pedido-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.pedido-form {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.pedido-form h3 {
-    margin: 1.5rem 0 1rem;
-    color: #d32f2f;
-}
-
-.pedido-form select {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.tamanho-options {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.tamanho-options label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-}
-
-.pedido-resumo {
-    background-color: #f9f9f9;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#resumo-pedido {
-    margin: 1.5rem 0;
-}
-
-#resumo-pedido p {
-    margin-bottom: 0.5rem;
-}
-
-#finalizar-pedido {
-    width: 100%;
-    margin-top: 2rem;
-    background-color: #d32f2f;
-    color: white;
-}
-
-#finalizar-pedido:hover {
-    background-color: #b71c1c;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 1rem;
+const pizzas = [
+    {
+        id: 1,
+        name: "Margherita",
+        description: "Molho de tomate, mussarela, manjericão fresco",
+        price: 45.90,
+        category: "classicas",
+        image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        id: 2,
+        name: "Pepperoni",
+        description: "Molho de tomate, mussarela e pepperoni",
+        price: 52.90,
+        category: "classicas",
+        image: "https://images.unsplash.com/photo-1620374645498-af6bd681a0bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        id: 3,
+        name: "Quatro Queijos",
+        description: "Molho de tomate, mussarela, parmesão, gorgonzola e provolone",
+        price: 55.90,
+        category: "classicas",
+        image: "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        id: 4,
+        name: "Calabresa",
+        description: "Molho de tomate, mussarela e calabresa",
+        price: 49.90,
+        category: "classicas",
+        image: "https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        id: 5,
+        name: "Frango com Catupiry",
+        description: "Molho de tomate, frango desfiado e catupiry",
+        price: 58.90,
+        category: "especiais",
+        image: "https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        id: 6,
+        name: "Portuguesa",
+        description: "Molho de tomate, mussarela, presunto, ovo, cebola e azeitonas",
+        price: 59.90,
+        category: "especiais",
+        image: "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        id: 7,
+        name: "Brigadeiro",
+        description: "Chocolate brigadeiro e granulado",
+        price: 48.90,
+        category: "doces",
+        image: "https://images.unsplash.com/photo-1632818924360-68d4994cfdb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+        id: 8,
+        name: "Romeu e Julieta",
+        description: "Goiabada e queijo mussarela",
+        price: 52.90,
+        category: "doces",
+        image: "https://images.unsplash.com/photo-1632818924360-68d4994cfdb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     }
+];
 
-    nav ul {
-        margin-top: 1rem;
+let cart = [];
+const cartModal = document.querySelector('.cart-modal');
+const cartItemsContainer = document.querySelector('.cart-items');
+const cartCount = document.querySelector('.cart-count');
+const totalPriceElement = document.querySelector('.total-price');
+const cartIcon = document.querySelector('.cart-icon');
+const closeCartBtn = document.querySelector('.close-cart');
+const checkoutBtn = document.querySelector('.checkout-btn');
+const filterButtons = document.querySelectorAll('.filter-btn');
+const pizzasContainer = document.querySelector('.pizzas-container');
+
+function displayPizzas(category = 'all') {
+    pizzasContainer.innerHTML = '';
+    
+    const filteredPizzas = category === 'all' 
+        ? pizzas 
+        : pizzas.filter(pizza => pizza.category === category);
+    
+    filteredPizzas.forEach(pizza => {
+        const pizzaCard = document.createElement('div');
+        pizzaCard.className = 'pizza-card';
+        pizzaCard.innerHTML = `
+            <img src="${pizza.image}" alt="${pizza.name}" class="pizza-img">
+            <div class="pizza-info">
+                <h3>${pizza.name}</h3>
+                <p>${pizza.description}</p>
+                <div class="pizza-price">
+                    <span class="price">R$ ${pizza.price.toFixed(2)}</span>
+                    <button class="add-to-cart" data-id="${pizza.id}">Adicionar</button>
+                </div>
+            </div>
+        `;
+        pizzasContainer.appendChild(pizzaCard);
+    });
+    
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', addToCart);
+    });
+}
+
+function addToCart(e) {
+    const pizzaId = parseInt(e.target.getAttribute('data-id'));
+    const pizza = pizzas.find(p => p.id === pizzaId);
+    
+    const existingItem = cart.find(item => item.id === pizzaId);
+    
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({
+            ...pizza,
+            quantity: 1
+        });
     }
+    
+    updateCart();
+}
 
-    .hero-content h2 {
-        font-size: 2rem;
+function updateCart() {
+    cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function displayCart() {
+    cartItemsContainer.innerHTML = '';
+    
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p>Seu carrinho está vazio</p>';
+        totalPriceElement.textContent = '0.00';
+        return;
     }
+    
+    let totalPrice = 0;
+    
+    cart.forEach(item => {
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
+        cartItem.innerHTML = `
+            <div class="cart-item-info">
+                <h4>${item.name}</h4>
+                <p>R$ ${item.price.toFixed(2)}</p>
+            </div>
+            <div class="cart-item-actions">
+                <button class="decrease">-</button>
+                <span>${item.quantity}</span>
+                <button class="increase">+</button>
+                <span class="remove-item">&times;</span>
+            </div>
+        `;
+        cartItemsContainer.appendChild(cartItem);
+        
+        totalPrice += item.price * item.quantity;
+        
+        const decreaseBtn = cartItem.querySelector('.decrease');
+        const increaseBtn = cartItem.querySelector('.increase');
+        const removeBtn = cartItem.querySelector('.remove-item');
+        
+        decreaseBtn.addEventListener('click', () => {
+            if (item.quantity > 1) {
+                item.quantity -= 1;
+                displayCart();
+                updateCart();
+            }
+        });
+        
+        increaseBtn.addEventListener('click', () => {
+            item.quantity += 1;
+            displayCart();
+            updateCart();
+        });
+        
+        removeBtn.addEventListener('click', () => {
+            cart = cart.filter(cartItem => cartItem.id !== item.id);
+            displayCart();
+            updateCart();
+        });
+    });
+    
+    totalPriceElement.textContent = totalPrice.toFixed(2);
+}
 
-    .hero-content p {
-        font-size: 1.2rem;
+cartIcon.addEventListener('click', () => {
+    cartModal.style.display = 'flex';
+    displayCart();
+});
+
+closeCartBtn.addEventListener('click', () => {
+    cartModal.style.display = 'none';
+});
+
+checkoutBtn.addEventListener('click', () => {
+    if (cart.length > 0) {
+        alert('Pedido finalizado com sucesso! Obrigado pela preferência.');
+        cart = [];
+        updateCart();
+        displayCart();
+        cartModal.style.display = 'none';
+    } else {
+        alert('Seu carrinho está vazio!');
     }
+});
 
-    .about-content {
-        flex-direction: column;
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        displayPizzas(button.getAttribute('data-category'));
+    });
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target === cartModal) {
+        cartModal.style.display = 'none';
     }
+});
 
-    .about-content img {
-        max-width: 100%;
-    }
-
-    .pedido-container {
-        grid-template-columns: 1fr;
+function loadCart() {
+    const savedCart = localStorage.getItem('cart');
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+        updateCart();
     }
 }
+
+const precos = {
+    pizzas: { P: 20.00, M: 30.00, G: 40.00 },
+    bebidas: { coca: 10.00, dolly: 4.00, fanta: 8.00, guarana: 9.00 }
+};
+
+const nomes = {
+    pizzas: {
+        calabresa: 'Calabresa',
+        moda: 'A Moda',
+        '4queijos': '4 Queijos',
+        portuguesa: 'Portuguesa'
+    },
+    tamanhos: {
+        P: 'Pequena',
+        M: 'Média',
+        G: 'Grande'
+    },
+    bebidas: {
+        coca: 'Coca-Cola 2L',
+        dolly: 'Dolly 1L',
+        fanta: 'Fanta 2L',
+        guarana: 'Guaraná 2L'
+    }
+};
+
+const saborPizza = document.getElementById('sabor-pizza');
+const tamanhoRadios = document.querySelectorAll('input[name="tamanho"]');
+const bebidaSelect = document.getElementById('bebida');
+const finalizarBtn = document.getElementById('finalizar-pedido');
+const resumoPedido = document.getElementById('resumo-pedido');
+const totalPedido = document.getElementById('total-pedido');
+
+function atualizarResumo() {
+    const pizza = saborPizza.value;
+    const tamanho = document.querySelector('input[name="tamanho"]:checked')?.value;
+    const bebida = bebidaSelect.value;
+    
+    let html = '';
+    let total = 0;
+    
+    if (pizza && tamanho) {
+        const nomePizza = nomes.pizzas[pizza];
+        const nomeTamanho = nomes.tamanhos[tamanho];
+        const precoPizza = precos.pizzas[tamanho];
+        
+        html += `<p>Pizza ${nomePizza} ${nomeTamanho} - R$ ${precoPizza.toFixed(2)}</p>`;
+        total += precoPizza;
+    }
+    
+    if (bebida) {
+        const nomeBebida = nomes.bebidas[bebida];
+        const precoBebida = precos.bebidas[bebida];
+        
+        html += `<p>${nomeBebida} - R$ ${precoBebida.toFixed(2)}</p>`;
+        total += precoBebida;
+    }
+    
+    if (html === '') {
+        html = '<p>Selecione os itens do seu pedido</p>';
+    }
+    
+    resumoPedido.innerHTML = html;
+    totalPedido.innerHTML = `<h4>Total: R$ ${total.toFixed(2)}</h4>`;
+}
+
+saborPizza.addEventListener('change', atualizarResumo);
+tamanhoRadios.forEach(radio => radio.addEventListener('change', atualizarResumo));
+bebidaSelect.addEventListener('change', atualizarResumo);
+
+finalizarBtn.addEventListener('click', () => {
+    const pizza = saborPizza.value;
+    const tamanho = document.querySelector('input[name="tamanho"]:checked')?.value;
+    const bebida = bebidaSelect.value;
+    
+    if (!pizza || !tamanho || !bebida) {
+        alert('Por favor, selecione todos os itens do pedido!');
+        return;
+    }
+    
+    const nomePizza = nomes.pizzas[pizza];
+    const nomeTamanho = nomes.tamanhos[tamanho];
+    const nomeBebida = nomes.bebidas[bebida];
+    const total = precos.pizzas[tamanho] + precos.bebidas[bebida];
+    
+    alert(`Pedido finalizado com sucesso!\n\nPizza ${nomePizza} ${nomeTamanho}\n${nomeBebida}\n\nTotal: R$ ${total.toFixed(2)}\n\nObrigado pela preferência!`);
+    
+    saborPizza.value = '';
+    tamanhoRadios.forEach(radio => radio.checked = false);
+    bebidaSelect.value = '';
+    atualizarResumo();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    displayPizzas();
+    loadCart();
+});
