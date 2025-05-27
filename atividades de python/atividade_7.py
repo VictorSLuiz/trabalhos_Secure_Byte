@@ -1,7 +1,6 @@
-print('---------------------')
-num0 = int(input('DIGITE O VALOR DE N1 :'))
-print('---------------------')
-num1 = int(input('DIGITE O VALOR DE N2 : ')) 
-#--------------------------------------------------------------
-print(f'O VALOR DE N1 É {num1} ')
-print(f'O VALOR DE N2 É {num0} ')
+num1 = int(input('DIGITE O VALOR DE N1 :'))
+num2 = int(input('DIGITE O VALOR DE N2 : ')) 
+
+num1, num2 == num2, num1
+
+print (num1, num2)
