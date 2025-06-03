@@ -53,7 +53,7 @@ const pizzas = [
         description: "Chocolate brigadeiro e granulado",
         price: 48.90,
         category: "doces",
-        image: "https://images.unsplash.com/photo-1632818924360-68d4994cfdb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        image: "https://www.google.com/imgres?q=foto%20de%20fatia%20de%20pizza%20de%20brigadeiro%204k&imgurl=https%3A%2F%2Fxamegobom.com.br%2Fwp-content%2Fuploads%2F2017%2F04%2Fpizza-de-brigadeiro-pizzaiolo.jpg&imgrefurl=https%3A%2F%2Fxamegobom.com.br%2Freceita%2Fpizza-de-brigadeiro-pizzaiolo%2F&docid=Fog0YL7DtakogM&tbnid=09abs3LH_qfFBM&vet=12ahUKEwjo_-TY-dONAxUrLbkGHY65FdUQM3oECGwQAA..i&w=380&h=350&hcb=2&ved=2ahUKEwjo_-TY-dONAxUrLbkGHY65FdUQM3oECGwQAA"
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const pizzas = [
         description: "Goiabada e queijo mussarela",
         price: 52.90,
         category: "doces",
-        image: "https://images.unsplash.com/photo-1632818924360-68d4994cfdb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        image: "https://www.google.com/imgres?q=foto%20de%20fatia%20de%20pizza%20de%20romeu%20e%20julieta%204k&imgurl=https%3A%2F%2Fs2-receitas.glbimg.com%2FkoMB0msFzK8VobWu5_xsu3ww-R0%3D%2F1200x0%2Ffilters%3Aformat(jpeg)%2Fhttps%3A%2F%2Fi.s3.glbimg.com%2Fv1%2FAUTH_1f540e0b94d8437dbbc39d567a1dee68%2Finternal_photos%2Fbs%2F2024%2Fp%2Fo%2FHAYVoDTMq8MZXt0P9qYQ%2Fpizza-romeu-e-julieta.jpg&imgrefurl=https%3A%2F%2Freceitas.globo.com%2Fana-maria-braga%2Fsalgados%2Fpizza-romeu-e-julieta.ghtml&docid=dkZLGvVpcf24yM&tbnid=nVEIQyqrABC-qM&vet=12ahUKEwjx7aXx-dONAxXTO7kGHR7mKOQQM3oECB4QAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwjx7aXx-dONAxXTO7kGHR7mKOQQM3oECB4QAA"
     }
 ];
 
