@@ -3,7 +3,6 @@ const pizzas = [
         id: 1,
         name: "Margherita",
         description: "Molho de tomate, mussarela, manjericão fresco",
-        price: 45.90,
         category: "classicas",
         image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
@@ -11,7 +10,6 @@ const pizzas = [
         id: 2,
         name: "Pepperoni",
         description: "Molho de tomate, mussarela e pepperoni",
-        price: 52.90,
         category: "classicas",
         image: "https://images.unsplash.com/photo-1620374645498-af6bd681a0bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
@@ -19,7 +17,6 @@ const pizzas = [
         id: 3,
         name: "Quatro Queijos",
         description: "Molho de tomate, mussarela, parmesão, gorgonzola e provolone",
-        price: 55.90,
         category: "classicas",
         image: "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
@@ -27,7 +24,6 @@ const pizzas = [
         id: 4,
         name: "Calabresa",
         description: "Molho de tomate, mussarela e calabresa",
-        price: 49.90,
         category: "classicas",
         image: "https://images.unsplash.com/photo-1601924582970-9238bcb495d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
@@ -35,7 +31,6 @@ const pizzas = [
         id: 5,
         name: "Frango com Catupiry",
         description: "Molho de tomate, frango desfiado e catupiry",
-        price: 58.90,
         category: "especiais",
         image: "https://images.unsplash.com/photo-1593504049359-74330189a345?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
@@ -43,7 +38,6 @@ const pizzas = [
         id: 6,
         name: "Portuguesa",
         description: "Molho de tomate, mussarela, presunto, ovo, cebola e azeitonas",
-        price: 59.90,
         category: "especiais",
         image: "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     },
@@ -51,17 +45,15 @@ const pizzas = [
         id: 7,
         name: "Brigadeiro",
         description: "Chocolate brigadeiro e granulado",
-        price: 48.90,
         category: "doces",
-        image: "https://www.google.com/imgres?q=foto%20de%20fatia%20de%20pizza%20de%20brigadeiro%204k&imgurl=https%3A%2F%2Fxamegobom.com.br%2Fwp-content%2Fuploads%2F2017%2F04%2Fpizza-de-brigadeiro-pizzaiolo.jpg&imgrefurl=https%3A%2F%2Fxamegobom.com.br%2Freceita%2Fpizza-de-brigadeiro-pizzaiolo%2F&docid=Fog0YL7DtakogM&tbnid=09abs3LH_qfFBM&vet=12ahUKEwjo_-TY-dONAxUrLbkGHY65FdUQM3oECGwQAA..i&w=380&h=350&hcb=2&ved=2ahUKEwjo_-TY-dONAxUrLbkGHY65FdUQM3oECGwQAA"
+        image: "https://sdmntprcentralus.oaiusercontent.com/files/00000000-f46c-61f5-b89e-a6cce029a497/raw?se=2025-06-03T01%3A28%3A14Z&sp=r&sv=2024-08-04&sr=b&scid=74f6f6e6-c8b0-55ee-9499-1b15e260ae32&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-02T22%3A57%3A39Z&ske=2025-06-03T22%3A57%3A39Z&sks=b&skv=2024-08-04&sig=8dd8vysw%2By0lhfRaM5vMW8cD3ea1jlnIatlEBBNdkW8%3D"
     },
     {
         id: 8,
         name: "Romeu e Julieta",
         description: "Goiabada e queijo mussarela",
-        price: 52.90,
         category: "doces",
-        image: "https://www.google.com/imgres?q=foto%20de%20fatia%20de%20pizza%20de%20romeu%20e%20julieta%204k&imgurl=https%3A%2F%2Fs2-receitas.glbimg.com%2FkoMB0msFzK8VobWu5_xsu3ww-R0%3D%2F1200x0%2Ffilters%3Aformat(jpeg)%2Fhttps%3A%2F%2Fi.s3.glbimg.com%2Fv1%2FAUTH_1f540e0b94d8437dbbc39d567a1dee68%2Finternal_photos%2Fbs%2F2024%2Fp%2Fo%2FHAYVoDTMq8MZXt0P9qYQ%2Fpizza-romeu-e-julieta.jpg&imgrefurl=https%3A%2F%2Freceitas.globo.com%2Fana-maria-braga%2Fsalgados%2Fpizza-romeu-e-julieta.ghtml&docid=dkZLGvVpcf24yM&tbnid=nVEIQyqrABC-qM&vet=12ahUKEwjx7aXx-dONAxXTO7kGHR7mKOQQM3oECB4QAA..i&w=1200&h=675&hcb=2&ved=2ahUKEwjx7aXx-dONAxXTO7kGHR7mKOQQM3oECB4QAA"
+        image: "https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-626c-622f-8adf-02a9736c80c8/raw?se=2025-06-03T01%3A25%3A47Z&sp=r&sv=2024-08-04&sr=b&scid=c05a81c1-30ab-502a-8ca8-c02c22523b7c&skoid=add8ee7d-5fc7-451e-b06e-a82b2276cf62&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-02T22%3A58%3A59Z&ske=2025-06-03T22%3A58%3A59Z&sks=b&skv=2024-08-04&sig=jZ4e85BPrJkvhSQhuj5LKhXqvX%2BxdfJXy6ANygF3umQ%3D"
     }
 ];
 
