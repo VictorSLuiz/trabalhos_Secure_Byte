@@ -239,7 +239,9 @@ const nomes = {
         calabresa: 'Calabresa',
         moda: 'A Moda',
         '4queijos': '4 Queijos',
-        portuguesa: 'Portuguesa'
+        portuguesa: 'Portuguesa',
+        brigadeiro: 'Brigadeiro',
+        romeu_e_julieta: 'Romeu e Julieta',
     },
     tamanhos: {
         P: 'Pequena',
