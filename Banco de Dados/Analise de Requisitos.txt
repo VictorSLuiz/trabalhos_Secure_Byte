@@ -1,0 +1,24 @@
+Divisao do Trabalho ------
+
+Cadastro 
+** Nome , Endereço , Cpf , Telefone ,  Data de nascimento , E-mail **
+
+Usar ----
+
+1 Fn
+
+Explicar ----
+
+2 Fn
+3 Fn
+
+Modelos -------
+
+** Conceitual - BrModelo **
+
+** Logico  - Brmodelo **
+
+** Físico - MySkl Workbanch **
+
+
+
