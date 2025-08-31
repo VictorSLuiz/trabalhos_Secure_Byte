@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Bytez - A melhor pizza da cidade!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pizzaria Bytez</h1>
+            <p>Desde 2025</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>As melhores pizzas da região!</h2>
+            <p>Feitas com ingredientes frescos e de qualidade!</p>
+            <a href="#menu" class="btn">Ver Menu</a>
+        </div>
+    </section>
+
+    <section id="pedidos" class="pedidos">
+        <h2>Faça seu Pedido</h2>
+        <div class="pedido-container">
+            <div class="pedido-form">
+                <h3>Escolha sua Pizza</h3>
+                <select id="sabor-pizza">
+                    <option value="">Selecione um sabor</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="4 queijos">Quatro Queijos</option>
+                    <option value="margherita">Margherita</option>
+                    <option value="portuguesa">Portuguesa</option>
+                    <option value="frango com catupiry">Frango com catupiry</option>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="brigadeiro">Brigadeiro</option>
+                    <option value="romeu e Julieta">Romeu e Julieta</option>
+                </select>
+                
+                <h3>Escolha o Tamanho</h3>
+                <div class="tamanho-options">
+                    <label><input type="radio" name="tamanho" value="P"> Pequena (R$ 20,00)</label>
+                    <label><input type="radio" name="tamanho" value="M"> Média (R$ 30,00)</label>
+                    <label><input type="radio" name="tamanho" value="G"> Grande (R$ 40,00)</label>
+                </div>
+                
+                <h3>Escolha a Bebida</h3>
+                <select id="bebida">
+                    <option value="">Selecione uma bebida</option>
+                    <option value="coca">Coca-Cola 2L (R$ 10,00)</option>
+                    <option value="dolly">Dolly 1L (R$ 4,00)</option>
+                    <option value="fanta">Fanta 2L (R$ 8,00)</option>
+                    <option value="guarana">Guaraná 2L (R$ 9,00)</option>
+                </select>
+                
+                <button id="finalizar-pedido" class="btn">Finalizar Pedido</button>
+            </div>
+            
+            <div class="pedido-resumo">
+                <h3>Resumo do Pedido</h3>
+                <div id="resumo-pedido">
+                    <p>Selecione os itens do seu pedido</p>
+                </div>
+                <div id="total-pedido">
+                    <h4>Total: R$ 0.00</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <h2>Sobre Nós</h2>
+        <div class="about-content">
+            <p>Fundada em 2025, a Pizzaria Bytez mantém a tradição de preparar pizzas artesanais com receitas familiares. Nossa massa é preparada diariamente e nossos ingredientes são selecionados cuidadosamente.</p>
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Forno a lenha">
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <h2>Contato</h2>
+        <div class="contact-info">
+            <div>
+                <h3>Endereço</h3>
+                <p>Rua dos Commits, 123</p>
+                <p>Heliópolis - Belo Horizonte</p>
+            </div>
+            <div>
+                <h3>Horário</h3>
+                <p>Terça a Domingo</p>
+                <p>18:00 - 23:00</p>
+            </div>
+            <div>
+                <h3>Telefone</h3>
+                <p>(31) 2811-2856</p>
+                <p>(31) 98641-6506</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pizzaria Bytez. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <div class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Seu Carrinho</h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: R$ <span class="total-price">0.00</span></h3>
+                <button class="checkout-btn">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
