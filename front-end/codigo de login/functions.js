@@ -17,7 +17,7 @@ function verificarLogin() {
     for (let i = 0; i < usuariosPermitidos.length; i++) {
         if ( usuarioDigitado === usuariosPermitidos[i].usuario  && senhaDigitada === usuariosPermitidos[i].senha) {
            encontrado=true;
-           
+           window.location.href="kkk.html";
             mensagem.innerHTML = "Login feito com sucesso!";
             return;
         }
