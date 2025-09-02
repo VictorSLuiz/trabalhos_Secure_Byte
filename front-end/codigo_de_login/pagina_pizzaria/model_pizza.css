@@ -1,0 +1,100 @@
+/*
+  O que vou fazer?
+  Dar um estilo geral para o corpo da página.
+*/
+body {
+  background-color: #f0e68c; /* Cor de fundo amarela clara, tipo massa de pizza */
+  font-family: Arial, sans-serif; /* Tipo de letra simples */
+  text-align: center; /* Centraliza todo o texto da página */
+  margin: 0; /* Remove a margem padrão do navegador */
+}
+
+/*
+  O que vou fazer?
+  Estilizar o cabeçalho, que é a placa da pizzaria.
+*/
+header {
+  background-color: #8b0000; /* Cor de molho de tomate */
+  color: white; /* Cor do texto branco */
+  padding: 20px; /* Um espaço interno para não grudar nas bordas */
+  font-size: 2em; /* Deixa o texto bem grande */
+  font-weight: bold; /* Deixa a letra em negrito */
+}
+
+/*
+  O que vou fazer?
+  Estilizar o título "Escolha um sabor...".
+*/
+h2 {
+  color: #4b0000; /* Uma cor de vermelho mais escura */
+}
+
+/*
+  O que vou fazer?
+  Estilizar a lista de pizzas (o cardápio).
+*/
+ul {
+  list-style-type: none; /* Remove as bolinhas da lista */
+  padding: 0; /* Remove o espaço interno padrão */
+}
+
+/*
+  O que vou fazer?
+  Estilizar cada sabor de pizza da lista.
+*/
+li {
+  background-color: #fffacd; /* Cor amarela bem clara, tipo queijo */
+  border: 1px solid #d3d3d3; /* Uma borda fina para cada item */
+  margin: 10px auto; /* Espaço entre os itens e centraliza */
+  padding: 15px; /* Espaço interno para o texto não grudar na borda */
+  width: 80%; /* Ocupa 80% da largura da tela */
+  max-width: 400px; /* Não deixa o item ficar grande demais em telas largas */
+  cursor: pointer; /* Transforma o cursor em uma mãozinha para mostrar que é clicável */
+}
+
+/*
+  O que vou fazer?
+  Criar um efeito quando o mouse passa por cima de um sabor.
+*/
+li:hover {
+  background-color: #f08080; /* Fica com uma cor mais avermelhada */
+  color: white; /* A cor do texto muda para branco */
+}
+
+/*
+  O que vou fazer?
+  Estilizar a área onde a descrição da pizza vai aparecer.
+*/
+#detalhes {
+  margin: 20px auto; /* Espaço em cima e embaixo, e centraliza */
+  width: 80%;
+  max-width: 400px;
+  min-height: 50px; /* Garante que o espaço não suma */
+  padding: 15px;
+  border: 2px dashed #8b0000; /* Uma borda pontilhada */
+}
+
+/*
+  O que vou fazer?
+  Estilizar o rodapé.
+*/
+footer {
+  background-color: #4b0000; /* Cor escura do rodapé */
+  color: white; /* Texto branco */
+  padding: 20px;
+  margin-top: 40px; /* Espaço em cima para separar do conteúdo */
+}
+
+/*
+  O que vou fazer?
+  Estilizar o link do Instagram no rodapé.
+*/
+footer a {
+  color: #fffacd; /* Amarelo claro para o link */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  font-weight: bold; /* Deixa o texto do link em negrito */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Mostra o sublinhado quando o mouse passa por cima */
+}

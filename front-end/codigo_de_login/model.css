@@ -1,0 +1,90 @@
+/*
+  O que vou fazer?
+  Dar um estilo para o corpo da página inteira.
+  A cor de fundo será como a massa de pizza.
+*/
+body {
+  font-family: 'Poppins', sans-serif; /* A mesma fonte do cardápio */
+  background-color: #f5f5dc; /* Bege claro, como a massa da pizza */
+  display: flex; /* Para centralizar o conteúdo */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/*
+  O que vou fazer?
+  Criar a caixinha de login, como se fosse um quadro na parede da pizzaria.
+*/
+container {
+  background-color: #fffacd; /* Cor amarela clara, como queijo */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid #d3d3d3; /* Borda fina */
+}
+
+/*
+  O que vou fazer?
+  Estilizar o título "Faça seu Login".
+*/
+h1 {
+  color: #4b0000; /* Vermelho escuro, igual ao título do cardápio */
+}
+
+/*
+  O que vou fazer?
+  Estilizar os parágrafos.
+*/
+p {
+  color: #555;
+  margin: 10px 0;
+}
+
+/*
+  O que vou fazer?
+  Estilizar as caixas de texto (inputs).
+*/
+input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/*
+  O que vou fazer?
+  Estilizar o botão de "Entrar".
+*/
+button {
+  background-color: #8b0000; /* O mesmo vermelho do cabeçalho da pizzaria */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/*
+  O que vou fazer?
+  Mudar a cor do botão quando o mouse passa por cima,
+  para combinar com o efeito dos sabores de pizza.
+*/
+button:hover {
+  background-color: #4b0000; /* Fica um vermelho mais escuro */
+}
+
+/*
+  O que vou fazer?
+  Estilizar a mensagem de erro (ou sucesso).
+*/
+#mensagem {
+  color: #8b0000; /* Usa a cor vermelha principal */
+  font-weight: bold;
+}
