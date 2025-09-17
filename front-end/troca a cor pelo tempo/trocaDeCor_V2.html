@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scacet=1.0">
+    <title> atividade</title>
+
+    <style>
+        body {
+            transition: background-color 1s;
+            font-family: Arial, sams-serif;
+            color: black(7,7,7);
+            text-align: center;
+            padding-top:70px;
+        }
+ 
+
+        @media(max-width: 768px){
+            body{ font-size: 35px; padding: 16px;}
+            button{ font-size: 14px; padding: 16px;}
+        }
+    </style>
+</head>
+<body>
+    <p id="frase"></p>
+    <p id="hora"></p>
+    <p id="data"></p>
+   
+<script>
+    function trocar() {
+        
+        const hora = new Date().getHours();
+        
+        let cor;
+        let mensagem;
+
+        if (hora >= 6 && hora <12) {
+            cor = "#FFD700"; // dourado manhã.
+            mensagem = "Bom dia! ☀️";
+        } else if (hora >= 12 && hora < 18){
+            cor = "#FF8C00"; //laranja tarde
+            mensagem = "Boa tardae! ⛅";
+        } else if (hora >= 18 && hora < 23) {
+            cor = "#1E90FF"; // azul crepusculo+.
+            mensagem = "Boa noite!🌑";
+        } else{
+            cor = "#2F4F4F"; // cinza escuro madrugada
+            mensagem = "Hora de Dormir! 😴";
+        }
+        const agora = new Date();
+        const minutos = agora.getMinutes().toString().padStart(2, "0");
+        const segundos = agora.getSeconds().toString().padStart(2, "0");
+        const opcoes = { weekday : 'long', year: 'numeric', month: 'long', day: 'numeric'};
+        const dataFormatada = agora.toLocaleDateString("pt-BR", opcoes);
+        
+        
+        document.body.style.background = cor;
+        document.getElementById("hora").innerHTML = "agora são " + hora +":"+ minutos + ":" + segundos;
+        document.getElementById("data").innerHTML = "📅" + dataFormatada;
+        document.getElementById("frase").innerHTML = mensagem;
+    }
+
+    //document.addEventListener("DOMContentLoaded", trocar);
+    //document.addEventListener("DOMContentLoaded", F5_INFINITO);
+
+     trocar();
+     setInterval(trocar,1000);
+    
+    
+
+</script>
+    </body>
+    <html>
